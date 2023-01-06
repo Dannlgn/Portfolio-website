@@ -9,6 +9,10 @@
   .footer-social {
     display: none;
   }
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
   .contact-h {
     padding-top: 80px;
   }

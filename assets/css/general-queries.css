@@ -62,19 +62,6 @@
   h1 {
     margin-bottom: 0;
   }
-  .footer {
-    color: #ffffff;
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    padding-top: 120px;
-    padding-right: 200px;
-    letter-spacing: 1px;
-    font-size: 12px;
-  }
-  .footer .year {
-    color: #4375ba;
-  }
   .popup {
     width: 50%;
   }
