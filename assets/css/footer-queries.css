@@ -1,0 +1,26 @@
+.footer-social {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 35px auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-social {
+    display: none;
+  }
+  .contact-h {
+    padding-top: 80px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .footer {
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+  .footer .year {
+    color: #4375ba;
+  }
+}

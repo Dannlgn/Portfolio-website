@@ -1,0 +1,35 @@
+@import "_config";
+
+// Mobile
+
+.footer-social {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 35px auto;
+}
+
+// Tablet and Desktop
+
+@media only screen and (min-width: 600px) {
+  .footer-social {
+    display: none;
+  }
+  .contact-h {
+    padding-top: 80px;
+  }
+}
+
+// Tablet
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .footer {
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 12px;
+    .year {
+      color: $color-b;
+    }
+  }
+}

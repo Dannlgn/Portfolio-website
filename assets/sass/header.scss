@@ -1,0 +1,35 @@
+@import "_config";
+
+.header {
+  background: linear-gradient(0deg, rgba(28,31,31,1) 0%, rgba(28,29,37,1) 46%, rgba(28,29,37,1) 100%);
+  color: $secondary-color;
+}
+
+.navbar {
+  padding-top: 0;
+  box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+  .logo {
+    width: 70px;
+  }
+
+  a {
+    color: $primary-color;
+  }
+
+  .cv {
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+}
+
+.navbar-dark {
+  background-color: $secondary-color;
+}
+
+#icon {
+  margin-top: 12px;
+  width: 15px;
+  cursor: pointer;
+}

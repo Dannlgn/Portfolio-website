@@ -1,0 +1,81 @@
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .welcome {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 110px;
+  }
+  .welcome-cont {
+    margin-bottom: 150px;
+  }
+  .about {
+    align-self: center;
+    margin-top: 35px;
+  }
+  .thumbnail-box {
+    display: flex;
+    justify-content: center;
+  }
+  .caption-over {
+    padding-bottom: 15px;
+  }
+  .cv {
+    margin-left: 30px;
+  }
+  p {
+    padding-top: 5px;
+  }
+  .popup {
+    max-width: 90%;
+    max-height: 80%;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .logo {
+    margin-left: 70px;
+  }
+  .welcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 100px;
+  }
+  .welcome-cont {
+    text-align: left;
+  }
+  .about {
+    align-self: center;
+    margin-bottom: 90px;
+  }
+  .testo {
+    padding: 20px;
+  }
+  .caption {
+    padding-top: 5px;
+  }
+  .thumbnail-box {
+    display: flex;
+    justify-content: center;
+  }
+  .cv {
+    margin-left: 30px;
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+  .footer {
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding-top: 120px;
+    padding-right: 200px;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+  .footer .year {
+    color: #4375ba;
+  }
+  .popup {
+    width: 50%;
+  }
+}
