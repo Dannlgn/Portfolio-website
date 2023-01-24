@@ -25,7 +25,7 @@
   padding: 10px;
   text-align: center;
 }
-.contact-section .contact-container .email-link-container .email-link {
+.contact-section .contact-container .email-link-container .email-btn {
   border-radius: 35px;
   background-color: #ffffff;
   border: 1px solid white;
@@ -34,13 +34,11 @@
   color: #1c1d25;
   font-weight: bold;
   text-transform: uppercase;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s;
+  cursor: pointer;
 }
-.contact-section .contact-container .email-link-container .email-link:focus {
-  transform: scale(0.8);
-}
-.contact-section .contact-container .email-link-container .email-link:hover {
-  opacity: 0.9;
+.contact-section .contact-container .email-link-container .email-btn:hover {
+  opacity: 0.7;
 }
 .contact-section .contact-container .footer {
   display: flex;
@@ -53,6 +51,69 @@
 }
 .contact-section .contact-container .footer .year {
   color: #4375ba;
+}
+
+#click {
+  display: none;
+}
+
+.content {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5em;
+}
+.content .fa-times {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #1c1d25;
+}
+.content .fa-times:hover {
+  color: #4375ba;
+}
+.content .close-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 25px;
+  border: 1px solid red;
+}
+
+#click:checked ~ .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  width: 80%;
+}
+
+.btn-submit {
+  margin-top: 55px;
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: #1c1d25;
+  color: white;
+  border-radius: 20px;
+}
+
+.btn-submit:hover {
+  opacity: 0.9;
 }
 
 .custom-shape-divider-top-1672746462 {

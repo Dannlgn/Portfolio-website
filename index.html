@@ -70,6 +70,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- EmailJS-->
+    <script src="assets/javascript/index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("ELLiZwEovt2QkdPBt");
+      })();
+    </script>
   </head>
   <body>
     <!-- Header -->
@@ -221,9 +233,36 @@
           Looking for opportunities. Let's work together!
         </h5>
         <div class="email-link-container">
-          <a href="mailto:daniele.lgn96@yahoo.it" target="_blank"
-            ><button class="email-link">Say Hi!</button></a
-          >
+          <input type="checkbox" id="click" />
+          <label for="click" class="email-btn">Say Hi!</label>
+          <div class="content">
+            <div class="form-header">
+              <label for="click" class="fas fa-times"></label>
+            </div>
+            <div class="form-group">
+              <h5 for="name">Name</h5>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <h5 for="email">Email</h5>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <h5 for="message">Message</h5>
+              <textarea id="message" rows="3" class="form-control"></textarea>
+            </div>
+            <button class="btn-submit" onclick="sendMail()">Submit</button>
+          </div>
         </div>
         <div class="social-icons footer-social">
           <a
