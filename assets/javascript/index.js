@@ -1,3 +1,6 @@
+const serviceID = "service_xzn6z4p";
+const templateID = "template_l81exmp";
+
 function sendMail() {
   var params = {
     name: document.getElementById("name").value,
@@ -5,18 +8,14 @@ function sendMail() {
     message: document.getElementById("message").value,
   };
 
-  const serviceID = "service_xzn6z4p";
-  const templateID = "template_l81exmp";
-
-  emailjs.send(serviceID, templateID, params)
-  .then(res=>{
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("message").value = "";
-      console.log(res);
-      alert("Your message sent successfully!!")
-
-  })
-  .catch(err=>console.log(err));
-
+  if (name.value == "" || email.value == "" || message.value == "") {
+    alert("Compile the Form!");
+  } else {
+    emailjs
+      .send(serviceID, templateID, params)
+      .then((res) => {
+        alert("Message sent successfully!!");
+      })
+      .catch((err) => console.log(err));
+  }
 }

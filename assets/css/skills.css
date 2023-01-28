@@ -1,0 +1,197 @@
+.skills-section {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.skills-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 550;
+  color: #1c1d25;
+  width: 100%;
+  padding-top: 35px;
+}
+
+.skill {
+  position: relative;
+  text-align: center;
+}
+.skill .skill-name {
+  font-weight: bold;
+  margin-top: 12px;
+}
+.skill .outer {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  background: #e0e0e0;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.skill .outer .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgb(255, 255, 255), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+}
+.skill .outer .inner #number {
+  font-weight: 600px;
+  color: #555;
+}
+
+.one circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  -webkit-animation: anim1 2s linear forwards;
+          animation: anim1 2s linear forwards;
+}
+@-webkit-keyframes anim1 {
+  100% {
+    stroke-dashoffset: 72;
+  }
+}
+@keyframes anim1 {
+  100% {
+    stroke-dashoffset: 72;
+  }
+}
+
+.two circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  -webkit-animation: anim2 2s linear forwards;
+          animation: anim2 2s linear forwards;
+}
+@-webkit-keyframes anim2 {
+  100% {
+    stroke-dashoffset: 118;
+  }
+}
+@keyframes anim2 {
+  100% {
+    stroke-dashoffset: 118;
+  }
+}
+
+.three circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  -webkit-animation: anim3 2s linear forwards;
+          animation: anim3 2s linear forwards;
+}
+@-webkit-keyframes anim3 {
+  100% {
+    stroke-dashoffset: 378;
+  }
+}
+@keyframes anim3 {
+  100% {
+    stroke-dashoffset: 378;
+  }
+}
+
+.four circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  -webkit-animation: anim4 2s linear forwards;
+          animation: anim4 2s linear forwards;
+}
+@-webkit-keyframes anim4 {
+  100% {
+    stroke-dashoffset: 142;
+  }
+}
+@keyframes anim4 {
+  100% {
+    stroke-dashoffset: 142;
+  }
+}
+
+.five circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  -webkit-animation: anim5 2s linear forwards;
+          animation: anim5 2s linear forwards;
+}
+@-webkit-keyframes anim5 {
+  100% {
+    stroke-dashoffset: 142;
+  }
+}
+@keyframes anim5 {
+  100% {
+    stroke-dashoffset: 142;
+  }
+}
+
+.six circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  -webkit-animation: anim6 2s linear forwards;
+          animation: anim6 2s linear forwards;
+}
+@-webkit-keyframes anim6 {
+  100% {
+    stroke-dashoffset: 142;
+  }
+}
+@keyframes anim6 {
+  100% {
+    stroke-dashoffset: 142;
+  }
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 400px) and (max-height: 750px) {
+  .skills-section {
+    margin-bottom: 120px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .skills-section {
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .skills-section .skill {
+    margin: 30px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .skills-section {
+    height: 50vh;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .skills-section .skill {
+    margin-top: 150px;
+  }
+}

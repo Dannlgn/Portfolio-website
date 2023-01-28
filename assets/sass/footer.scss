@@ -95,13 +95,6 @@
   .fa-times:hover {
     color: $color-b;
   }
-
-  .close-btn {
-    position: absolute;
-    bottom: 12px;
-    right: 25px;
-    border: 1px solid red;
-  }
 }
 
 #click:checked ~ .content {

@@ -13,7 +13,7 @@
 }
 .contact-section .contact-container .contact-h,
 .contact-section .contact-container .contact-p {
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
 .contact-section .contact-container .contact-h {
@@ -27,7 +27,7 @@
 }
 .contact-section .contact-container .email-link-container .email-btn {
   border-radius: 35px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid white;
   padding: 15px 45px;
   text-decoration: none;
@@ -43,7 +43,7 @@
 .contact-section .contact-container .footer {
   display: flex;
   justify-content: center;
-  color: #ffffff;
+  color: #fff;
   margin: auto;
   width: 100%;
   letter-spacing: 1px;
@@ -83,12 +83,6 @@
 }
 .content .fa-times:hover {
   color: #4375ba;
-}
-.content .close-btn {
-  position: absolute;
-  bottom: 12px;
-  right: 25px;
-  border: 1px solid red;
 }
 
 #click:checked ~ .content {
@@ -133,5 +127,5 @@
 }
 
 .custom-shape-divider-top-1672746462 .shape-fill {
-  fill: #ffffff;
+  fill: #fff;
 }

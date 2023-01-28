@@ -56,6 +56,7 @@
     />
 
     <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/skills.css" />
     <link rel="stylesheet" href="assets/css/project.css" />
     <link rel="stylesheet" href="assets/css/welcome.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
@@ -108,6 +109,9 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
@@ -149,11 +153,10 @@
       <div class="line"></div>
     </div>
 
-    <!-- Background -->
-    <div class="backg-img"></div>
-
     <!-- Home -->
     <section class="welcome-section">
+      <!-- Background -->
+      <div class="backg-img"></div>
       <div class="welcome">
         <div class="welcome-cont">
           <p class="caption-over">Hello ! I'm</p>
@@ -178,6 +181,144 @@
           </p>
         </div>
         <a href="#" class="close-popup"></a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+
+    <section class="skills-section" id="skills">
+      <h2>Skills</h2>
+      <div class="skill one">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">85%</div>
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="160px"
+          height="160px"
+        >
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#608fd0b2" />
+              <stop offset="100%" stop-color="#4375ba" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <h4 class="skill-name">HTML</h4>
+      </div>
+      <div class="skill two">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">75%</div>
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="160px"
+          height="160px"
+        >
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#608fd0b2" />
+              <stop offset="100%" stop-color="#4375ba" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <h4 class="skill-name">CSS</h4>
+      </div>
+      <div class="skill three">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">20%</div>
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="160px"
+          height="160px"
+        >
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#608fd0b2" />
+              <stop offset="100%" stop-color="#4375ba" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <h4 class="skill-name">Javascript</h4>
+      </div>
+      <div class="skill four">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">70%</div>
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="160px"
+          height="160px"
+        >
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#608fd0b2" />
+              <stop offset="100%" stop-color="#4375ba" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <h4 class="skill-name">UX/UI Design</h4>
+      </div>
+      <div class="skill five">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">70%</div>
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="160px"
+          height="160px"
+        >
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#608fd0b2" />
+              <stop offset="100%" stop-color="#4375ba" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <h4 class="skill-name">Photoshop</h4>
+      </div>
+      <div class="skill six">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">70%</div>
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="160px"
+          height="160px"
+        >
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#608fd0b2" />
+              <stop offset="100%" stop-color="#4375ba" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <h4 class="skill-name">Autodesk Maya</h4>
       </div>
     </section>
 
@@ -235,7 +376,8 @@
         <div class="email-link-container">
           <input type="checkbox" id="click" />
           <label for="click" class="email-btn">Say Hi!</label>
-          <div class="content">
+          <!-- Popup Form-->
+          <form class="content">
             <div class="form-header">
               <label for="click" class="fas fa-times"></label>
             </div>
@@ -246,6 +388,7 @@
                 class="form-control"
                 id="name"
                 placeholder="Enter your name"
+                required
               />
             </div>
             <div class="form-group">
@@ -255,14 +398,25 @@
                 class="form-control"
                 id="email"
                 placeholder="Enter your email"
+                required
               />
             </div>
             <div class="form-group">
               <h5 for="message">Message</h5>
-              <textarea id="message" rows="3" class="form-control"></textarea>
+              <textarea
+                id="message"
+                rows="3"
+                class="form-control"
+                required
+              ></textarea>
             </div>
-            <button class="btn-submit" onclick="sendMail()">Submit</button>
-          </div>
+            <input
+              type="submit"
+              class="btn-submit"
+              onclick="sendMail()"
+              value="Submit"
+            />
+          </form>
         </div>
         <div class="social-icons footer-social">
           <a

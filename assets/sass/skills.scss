@@ -1,0 +1,189 @@
+@import "_config";
+
+.skills-section {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-flow: wrap;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 550;
+    color: $secondary-color;
+    width: 100%;
+    padding-top: 35px;
+  }
+}
+
+// circle style
+
+.skill {
+  position: relative;
+  text-align: center;
+
+  .skill-name {
+    font-weight: bold;
+    margin-top: 12px;
+  }
+
+  .outer {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    background: #e0e0e0;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+      -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+    .inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+
+      #number {
+        font-weight: 600px;
+        color: #555;
+      }
+    }
+  }
+}
+
+// circle animation
+
+.one circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim1 2s linear forwards;
+  @keyframes anim1 {
+    100% {
+      stroke-dashoffset: 72;
+    }
+  }
+}
+
+.two circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim2 2s linear forwards;
+  @keyframes anim2 {
+    100% {
+      stroke-dashoffset: 118;
+    }
+  }
+}
+
+.three circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim3 2s linear forwards;
+
+  @keyframes anim3 {
+    100% {
+      stroke-dashoffset: 378;
+    }
+  }
+}
+
+.four circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim4 2s linear forwards;
+  @keyframes anim4 {
+    100% {
+      stroke-dashoffset: 142;
+    }
+  }
+}
+
+.five circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim5 2s linear forwards;
+  @keyframes anim5 {
+    100% {
+      stroke-dashoffset: 142;
+    }
+  }
+}
+
+.six circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim6 2s linear forwards;
+  @keyframes anim6 {
+    100% {
+      stroke-dashoffset: 142;
+    }
+  }
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// Smartphones below 400px width and 750px height
+
+@media only screen and (max-width: 400px) and  (max-height: 750px) {
+  .skills-section {
+    margin-bottom: 120px;
+  }
+}
+
+// Tablet
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .skills-section {
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+
+    .skill {
+      margin: 30px;
+    }
+  }
+}
+
+
+//Desktop
+
+@media only screen and (min-width: 1201px) {
+ .skills-section {
+  height: 50vh;
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  .skill {
+    margin-top: 150px;
+  }
+ }
+}
