@@ -1,12 +1,14 @@
-const serviceID = "service_xzn6z4p";
-const templateID = "template_l81exmp";
-var params = {
-  name: document.getElementById("name").value,
-  email: document.getElementById("email").value,
-  message: document.getElementById("message").value,
-};
-
 function sendMail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceID = "service_xzn6z4p";
+  const templateID = "template_l81exmp";
+
+ 
   if (name.value == "" || email.value == "" || message.value == "") {
     alert("Compile the Form!");
   } else {
